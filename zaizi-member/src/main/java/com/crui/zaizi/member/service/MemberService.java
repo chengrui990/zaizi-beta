@@ -8,6 +8,8 @@ import java.util.List;
 public interface MemberService {
     List<UmsMember> getAllMember();
 
+    List<UmsMemberReceiveAddress> getAddressByMemberId(Integer memberId);
+
 //    List<UmsMember> getAllUser();
 //
 //    List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(Integer memberId);

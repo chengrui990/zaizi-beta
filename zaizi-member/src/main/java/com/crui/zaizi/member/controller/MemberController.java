@@ -1,10 +1,12 @@
 package com.crui.zaizi.member.controller;
 
 import com.crui.zaizi.member.bean.UmsMember;
+import com.crui.zaizi.member.bean.UmsMemberReceiveAddress;
 import com.crui.zaizi.member.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
@@ -26,9 +28,15 @@ public class MemberController {
         return "hellp";
     }
 
-    @RequestMapping("getAllMember")
+    @RequestMapping("getAll")
     @ResponseBody
     public List<UmsMember> getAllMember(){
         return memberService.getAllMember();
+    }
+
+    @RequestMapping("getAddressByMemberId")
+    @ResponseBody
+    public List<UmsMemberReceiveAddress> getAddressByMemberId(@RequestParam Integer memberId){
+        return memberService.getAddressByMemberId(memberId);
     }
 }
