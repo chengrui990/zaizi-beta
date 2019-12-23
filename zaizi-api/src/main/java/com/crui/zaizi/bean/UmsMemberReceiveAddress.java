@@ -1,4 +1,4 @@
-package com.crui.zaizi.member.bean;
+package com.crui.zaizi.bean;
 /**
  * 会员收货地址表(ums_member_receive_address)
  * 

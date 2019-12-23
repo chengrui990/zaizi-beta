@@ -1,8 +1,8 @@
 package com.crui.zaizi.member.controller;
 
-import com.crui.zaizi.member.bean.UmsMember;
-import com.crui.zaizi.member.bean.UmsMemberReceiveAddress;
-import com.crui.zaizi.member.service.MemberService;
+import com.crui.zaizi.bean.UmsMember;
+import com.crui.zaizi.bean.UmsMemberReceiveAddress;
+import com.crui.zaizi.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package com.crui.zaizi.member.bean;
+package com.crui.zaizi.bean;
 
 
 import javax.persistence.GeneratedValue;
